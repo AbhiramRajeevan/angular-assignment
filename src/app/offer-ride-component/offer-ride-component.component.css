@@ -1,0 +1,25 @@
+.fdiv{
+    border: 2px solid #337AB7;
+    
+}
+.top{
+    background-color: #337AB7;
+    color: white;
+    padding: 10px;
+}
+.formdiv{
+    padding: 10px;
+}
+button{
+    background-color: #337AB7;
+    color: white;
+}
+
+button:disabled{
+    background-color:#7AA8D0;
+    color: white;
+}
+
+.error{
+    color: red;
+}

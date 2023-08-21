@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="fdiv rounded">
+                    <div class="top">
+                         Car Ride Registration Form
+                     </div>
+                     <div class="formdiv">
+                        <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                            <div class="mb-3">
+                              <label for="name" class="form-label fw-bold " >Name</label>
+                              <input type="text" class="form-control" id="name" formControlName="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sloc" class="form-label fw-bold " >Start Location</label>
+                                <input type="text" class="form-control" id="sloc" formControlName="sloc">
+                              </div>
+                              <div class="mb-3">
+                                <label for="des" class="form-label fw-bold " >Destination</label>
+                                <input type="text" class="form-control" id="des"  formControlName="des">
+                              </div>
+                              <div class="mb-3">
+                                <label for="car" class="form-label fw-bold " >Car</label>
+                                <input type="text" class="form-control" id="car" formControlName="car">
+                              </div>
+                              <div class="mb-3">
+                                <label for="seat" class="form-label fw-bold " >Seats Available</label>
+                                <input type="number" class="form-control" id="seat" formControlName="seat">
+                                <div *ngIf="contactForm.get('seat')?.invalid && contactForm.get('seat')?.touched" class="error">Seats should be greater than 0 or less than 8</div>
+                              </div>
+                            <button type="submit" class="btn me-3" [disabled]="contactForm.invalid">Submit</button>
+                            <button class="btn ">Go Back</button>
+                          </form>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+.menu{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 6%;
+}
+a{
+    text-decoration: none;
+    color: #FB5DA3;
+    font-weight: bold;
+    
+}
+.left
+{
+    position: absolute;
+    right:10px;
+}
